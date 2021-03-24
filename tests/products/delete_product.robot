@@ -12,6 +12,6 @@ Delete Product
     ${product}=     Post Product      ${payload}                 ${token}
 
     ${id}=          Convert To String   ${product.json()['id']}
-    ${resp}=        Get Product         ${id}   ${token}
+    ${resp}=        Delete Product         ${id}   ${token}
 
     Status Should Be      204       ${resp}
