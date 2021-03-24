@@ -17,8 +17,13 @@ pipeline {
             steps {
                 echo 'Executando testes de regressão'
                 sh 'robot -d ./logs tests/'
-                robot archiveDirName: 'robot-plugin', outputPath: 'logs', overwriteXAxisLabel: ''
+
             }
+           post {
+              always{ 
+                  robot archiveDirName: 'robot-plugin', outputPath: 'logs', overwriteXAxisLabel: ''
+              }
+           }
         }
         stage('UAT') {
             steps {
