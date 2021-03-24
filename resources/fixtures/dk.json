@@ -1,0 +1,8 @@
+{
+    "title": "Donkey Kong",
+    "category": "Super Nintendo",
+    "producers": ["Nintendo", "Rare"], 
+    "price": "199.99", 
+    "description": "É pura diversão com este clássico de plataforma 2D.",
+    "cover": "donkey-kong.jpg"
+}
